@@ -1,0 +1,527 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95E191C71916E79700569EEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C61916E79700569EEC /* Foundation.framework */; };
+		95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C81916E79700569EEC /* CoreGraphics.framework */; };
+		95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191CA1916E79700569EEC /* UIKit.framework */; };
+		95E191D11916E79700569EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95E191CF1916E79700569EEC /* InfoPlist.strings */; };
+		95E191D31916E79700569EEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E191D21916E79700569EEC /* main.m */; };
+		95E191D71916E79700569EEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E191D61916E79700569EEC /* AppDelegate.m */; };
+		95E191DA1916E79700569EEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95E191D81916E79700569EEC /* Main.storyboard */; };
+		95E191E21916E79700569EEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95E191E11916E79700569EEC /* Images.xcassets */; };
+		95E191E91916E79700569EEC /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191E81916E79700569EEC /* XCTest.framework */; };
+		95E191EA1916E79700569EEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C61916E79700569EEC /* Foundation.framework */; };
+		95E191EB1916E79700569EEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191CA1916E79700569EEC /* UIKit.framework */; };
+		95E191F31916E79700569EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95E191F11916E79700569EEC /* InfoPlist.strings */; };
+		95E191F51916E79700569EEC /* ToledoTechEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E191F41916E79700569EEC /* ToledoTechEventsTests.m */; };
+		95E1920A1916F5C400569EEC /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E192081916F5C400569EEC /* Event.m */; };
+		95E1920B1916F5C400569EEC /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E192091916F5C400569EEC /* Venue.m */; };
+		95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921A1917036300569EEC /* CALEventsDetailViewController.m */; };
+		95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921B1917036300569EEC /* CALEventsTableViewController.m */; };
+		95E1921F1917036300569EEC /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921C1917036300569EEC /* DataController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95E191EC1916E79700569EEC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95E191BB1916E79700569EEC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95E191C21916E79700569EEC;
+			remoteInfo = ToledoTechEvents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		95B4B529191ED475002D7F82 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
+		95B4B52C191ED481002D7F82 /* VenueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueList.h; sourceTree = "<group>"; };
+		95C7E8EB191737B900D43435 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		95E191C31916E79700569EEC /* ToledoTechEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToledoTechEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E191C61916E79700569EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		95E191C81916E79700569EEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		95E191CA1916E79700569EEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		95E191CE1916E79700569EEC /* ToledoTechEvents-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToledoTechEvents-Info.plist"; sourceTree = "<group>"; };
+		95E191D01916E79700569EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95E191D21916E79700569EEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		95E191D41916E79700569EEC /* ToledoTechEvents-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToledoTechEvents-Prefix.pch"; sourceTree = "<group>"; };
+		95E191D51916E79700569EEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		95E191D61916E79700569EEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		95E191D91916E79700569EEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		95E191E11916E79700569EEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		95E191E71916E79700569EEC /* ToledoTechEventsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToledoTechEventsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		95E191E81916E79700569EEC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		95E191F01916E79700569EEC /* ToledoTechEventsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToledoTechEventsTests-Info.plist"; sourceTree = "<group>"; };
+		95E191F21916E79700569EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95E191F41916E79700569EEC /* ToledoTechEventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToledoTechEventsTests.m; sourceTree = "<group>"; };
+		95E192061916F5C400569EEC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
+		95E192071916F5C400569EEC /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = ../Venue.h; sourceTree = "<group>"; };
+		95E192081916F5C400569EEC /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
+		95E192091916F5C400569EEC /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = ../Venue.m; sourceTree = "<group>"; };
+		95E192171917036300569EEC /* CALEventsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsDetailViewController.h; sourceTree = "<group>"; };
+		95E192181917036300569EEC /* CALEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsTableViewController.h; sourceTree = "<group>"; };
+		95E192191917036300569EEC /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
+		95E1921A1917036300569EEC /* CALEventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALEventsDetailViewController.m; sourceTree = "<group>"; };
+		95E1921B1917036300569EEC /* CALEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALEventsTableViewController.m; sourceTree = "<group>"; };
+		95E1921C1917036300569EEC /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95E191C01916E79700569EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */,
+				95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */,
+				95E191C71916E79700569EEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E191E41916E79700569EEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E191E91916E79700569EEC /* XCTest.framework in Frameworks */,
+				95E191EB1916E79700569EEC /* UIKit.framework in Frameworks */,
+				95E191EA1916E79700569EEC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95E191BA1916E79700569EEC = {
+			isa = PBXGroup;
+			children = (
+				95E191CC1916E79700569EEC /* ToledoTechEvents */,
+				95E191EE1916E79700569EEC /* ToledoTechEventsTests */,
+				95E191C51916E79700569EEC /* Frameworks */,
+				95E191C41916E79700569EEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95E191C41916E79700569EEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95E191C31916E79700569EEC /* ToledoTechEvents.app */,
+				95E191E71916E79700569EEC /* ToledoTechEventsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95E191C51916E79700569EEC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				95E191C61916E79700569EEC /* Foundation.framework */,
+				95E191C81916E79700569EEC /* CoreGraphics.framework */,
+				95E191CA1916E79700569EEC /* UIKit.framework */,
+				95E191E81916E79700569EEC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		95E191CC1916E79700569EEC /* ToledoTechEvents */ = {
+			isa = PBXGroup;
+			children = (
+				95E191FE1916E7B900569EEC /* Models */,
+				95E1920C1916F5E500569EEC /* Controllers */,
+				95E1920D1916F5F500569EEC /* Views */,
+				95E191D51916E79700569EEC /* AppDelegate.h */,
+				95E191D61916E79700569EEC /* AppDelegate.m */,
+				95E191E11916E79700569EEC /* Images.xcassets */,
+				95E191CD1916E79700569EEC /* Supporting Files */,
+			);
+			path = ToledoTechEvents;
+			sourceTree = "<group>";
+		};
+		95E191CD1916E79700569EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95E191CE1916E79700569EEC /* ToledoTechEvents-Info.plist */,
+				95E191CF1916E79700569EEC /* InfoPlist.strings */,
+				95E191D21916E79700569EEC /* main.m */,
+				95E191D41916E79700569EEC /* ToledoTechEvents-Prefix.pch */,
+				95C7E8EB191737B900D43435 /* Constants.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95E191EE1916E79700569EEC /* ToledoTechEventsTests */ = {
+			isa = PBXGroup;
+			children = (
+				95E191F41916E79700569EEC /* ToledoTechEventsTests.m */,
+				95E191EF1916E79700569EEC /* Supporting Files */,
+			);
+			path = ToledoTechEventsTests;
+			sourceTree = "<group>";
+		};
+		95E191EF1916E79700569EEC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				95E191F01916E79700569EEC /* ToledoTechEventsTests-Info.plist */,
+				95E191F11916E79700569EEC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		95E191FE1916E7B900569EEC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				95E192061916F5C400569EEC /* Event.h */,
+				95E192081916F5C400569EEC /* Event.m */,
+				95B4B529191ED475002D7F82 /* EventList.h */,
+				95E192071916F5C400569EEC /* Venue.h */,
+				95E192091916F5C400569EEC /* Venue.m */,
+				95B4B52C191ED481002D7F82 /* VenueList.h */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		95E1920C1916F5E500569EEC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				95E192181917036300569EEC /* CALEventsTableViewController.h */,
+				95E1921B1917036300569EEC /* CALEventsTableViewController.m */,
+				95E192171917036300569EEC /* CALEventsDetailViewController.h */,
+				95E1921A1917036300569EEC /* CALEventsDetailViewController.m */,
+				95E192191917036300569EEC /* DataController.h */,
+				95E1921C1917036300569EEC /* DataController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		95E1920D1916F5F500569EEC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95E191D81916E79700569EEC /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95E191C21916E79700569EEC /* ToledoTechEvents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E191F81916E79700569EEC /* Build configuration list for PBXNativeTarget "ToledoTechEvents" */;
+			buildPhases = (
+				95E191BF1916E79700569EEC /* Sources */,
+				95E191C01916E79700569EEC /* Frameworks */,
+				95E191C11916E79700569EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToledoTechEvents;
+			productName = ToledoTechEvents;
+			productReference = 95E191C31916E79700569EEC /* ToledoTechEvents.app */;
+			productType = "com.apple.product-type.application";
+		};
+		95E191E61916E79700569EEC /* ToledoTechEventsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95E191FB1916E79700569EEC /* Build configuration list for PBXNativeTarget "ToledoTechEventsTests" */;
+			buildPhases = (
+				95E191E31916E79700569EEC /* Sources */,
+				95E191E41916E79700569EEC /* Frameworks */,
+				95E191E51916E79700569EEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95E191ED1916E79700569EEC /* PBXTargetDependency */,
+			);
+			name = ToledoTechEventsTests;
+			productName = ToledoTechEventsTests;
+			productReference = 95E191E71916E79700569EEC /* ToledoTechEventsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95E191BB1916E79700569EEC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = GroundSpeed;
+				TargetAttributes = {
+					95E191E61916E79700569EEC = {
+						TestTargetID = 95E191C21916E79700569EEC;
+					};
+				};
+			};
+			buildConfigurationList = 95E191BE1916E79700569EEC /* Build configuration list for PBXProject "ToledoTechEvents" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95E191BA1916E79700569EEC;
+			productRefGroup = 95E191C41916E79700569EEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95E191C21916E79700569EEC /* ToledoTechEvents */,
+				95E191E61916E79700569EEC /* ToledoTechEventsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95E191C11916E79700569EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E191E21916E79700569EEC /* Images.xcassets in Resources */,
+				95E191D11916E79700569EEC /* InfoPlist.strings in Resources */,
+				95E191DA1916E79700569EEC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E191E51916E79700569EEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E191F31916E79700569EEC /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95E191BF1916E79700569EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E1920A1916F5C400569EEC /* Event.m in Sources */,
+				95E1920B1916F5C400569EEC /* Venue.m in Sources */,
+				95E191D71916E79700569EEC /* AppDelegate.m in Sources */,
+				95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */,
+				95E1921F1917036300569EEC /* DataController.m in Sources */,
+				95E191D31916E79700569EEC /* main.m in Sources */,
+				95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95E191E31916E79700569EEC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95E191F51916E79700569EEC /* ToledoTechEventsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95E191ED1916E79700569EEC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95E191C21916E79700569EEC /* ToledoTechEvents */;
+			targetProxy = 95E191EC1916E79700569EEC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		95E191CF1916E79700569EEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E191D01916E79700569EEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		95E191D81916E79700569EEC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E191D91916E79700569EEC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		95E191F11916E79700569EEC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95E191F21916E79700569EEC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		95E191F61916E79700569EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		95E191F71916E79700569EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95E191F91916E79700569EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToledoTechEvents/ToledoTechEvents-Prefix.pch";
+				INFOPLIST_FILE = "ToledoTechEvents/ToledoTechEvents-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		95E191FA1916E79700569EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToledoTechEvents/ToledoTechEvents-Prefix.pch";
+				INFOPLIST_FILE = "ToledoTechEvents/ToledoTechEvents-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		95E191FC1916E79700569EEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToledoTechEvents.app/ToledoTechEvents";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToledoTechEvents/ToledoTechEvents-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ToledoTechEventsTests/ToledoTechEventsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		95E191FD1916E79700569EEC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToledoTechEvents.app/ToledoTechEvents";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToledoTechEvents/ToledoTechEvents-Prefix.pch";
+				INFOPLIST_FILE = "ToledoTechEventsTests/ToledoTechEventsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95E191BE1916E79700569EEC /* Build configuration list for PBXProject "ToledoTechEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E191F61916E79700569EEC /* Debug */,
+				95E191F71916E79700569EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E191F81916E79700569EEC /* Build configuration list for PBXNativeTarget "ToledoTechEvents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E191F91916E79700569EEC /* Debug */,
+				95E191FA1916E79700569EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95E191FB1916E79700569EEC /* Build configuration list for PBXNativeTarget "ToledoTechEventsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95E191FC1916E79700569EEC /* Debug */,
+				95E191FD1916E79700569EEC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95E191BB1916E79700569EEC /* Project object */;
+}
