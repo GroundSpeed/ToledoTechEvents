@@ -7,16 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JSONModel.h"
 
-@interface Venue : NSObject
+@protocol Venue @end
 
-@property (nonatomic, strong) NSString *title;
-@property (nonatomic, strong) NSString *telephone;
-@property (nonatomic, strong) NSString *streetAddress;
-@property (nonatomic, strong) NSString *region;
-@property (nonatomic, strong) NSString *postalCode;
-@property (nonatomic, strong) NSString *address;
-@property (nonatomic, strong) NSString *description;
-@property (nonatomic, strong) NSString *url;
+@interface Venue : JSONModel
+
+@property(nonatomic,retain) NSString *access_notes;
+@property(nonatomic,retain) NSString *address;
+@property(nonatomic,retain) NSString *closed;
+@property(nonatomic,retain) NSString *country;
+@property(nonatomic,retain) NSString *created_at;
+@property(nonatomic,retain) NSString *description;
+@property(nonatomic,retain) NSString *duplicate_of_id;
+@property(nonatomic,retain) NSString *email;
+@property(nonatomic,retain) NSNumber *events_count;
+@property(nonatomic,retain) NSNumber *id;
+@property(nonatomic,retain) NSString *latitude;
+@property(nonatomic,retain) NSString *locality;
+@property(nonatomic,retain) NSString *longitude;
+@property(nonatomic,retain) NSString *postal_code;
+@property(nonatomic,retain) NSString *region;
+@property(nonatomic,retain) NSNumber *source_id;
+@property(nonatomic,retain) NSString *street_address;
+@property(nonatomic,retain) NSString *telephone;
+@property(nonatomic,retain) NSString *title;
+@property(nonatomic,retain) NSString *updated_at;
+@property(nonatomic,retain) NSString *url;
+@property(nonatomic,retain) NSString *wifi;
 
 @end

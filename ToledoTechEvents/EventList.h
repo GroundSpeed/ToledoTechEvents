@@ -6,10 +6,9 @@
 //  Copyright (c) 2014 GroundSpeed. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "Event.h"
 
-@interface EventList : NSObject
+@interface EventList : JSONModel
 
 @property (nonatomic, strong) NSArray<Event> *events;
 

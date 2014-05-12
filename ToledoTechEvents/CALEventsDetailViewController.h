@@ -11,9 +11,10 @@
 @interface CALEventsDetailViewController : UIViewController
 
 @property (retain, nonatomic) IBOutlet UILabel *lblTitle;
-@property (strong, nonatomic) IBOutlet UILabel *lblDate;
+@property (strong, nonatomic) IBOutlet UILabel *lblStartDate;
+@property (strong, nonatomic) IBOutlet UILabel *lblEndDate;
 @property (strong, nonatomic) IBOutlet UILabel *lblVenue;
-@property (strong, nonatomic) IBOutlet UILabel *lblDescription;
+@property (strong, nonatomic) IBOutlet UITextView *lblDescription;
 
 @property (nonatomic, strong) Event *event;
 

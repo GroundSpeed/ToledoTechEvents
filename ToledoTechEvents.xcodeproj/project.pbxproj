@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12F6CD90D3694E28B154F383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D8A759118F4BA1ADC83249 /* libPods.a */; };
+		95B4B531191FD4D4002D7F82 /* EventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4B530191FD4D4002D7F82 /* EventList.m */; };
+		95B4B534191FD4F0002D7F82 /* VenueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4B533191FD4F0002D7F82 /* VenueList.m */; };
 		95E191C71916E79700569EEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C61916E79700569EEC /* Foundation.framework */; };
 		95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C81916E79700569EEC /* CoreGraphics.framework */; };
 		95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191CA1916E79700569EEC /* UIKit.framework */; };
@@ -38,8 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		95B4B529191ED475002D7F82 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
-		95B4B52C191ED481002D7F82 /* VenueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueList.h; sourceTree = "<group>"; };
+		1876DE4483EB470DA7A6AD6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		36D8A759118F4BA1ADC83249 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B4B52F191FD4D4002D7F82 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
+		95B4B530191FD4D4002D7F82 /* EventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventList.m; sourceTree = "<group>"; };
+		95B4B532191FD4F0002D7F82 /* VenueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueList.h; sourceTree = "<group>"; };
+		95B4B533191FD4F0002D7F82 /* VenueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueList.m; sourceTree = "<group>"; };
 		95C7E8EB191737B900D43435 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		95E191C31916E79700569EEC /* ToledoTechEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToledoTechEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E191C61916E79700569EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -78,6 +85,7 @@
 				95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */,
 				95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */,
 				95E191C71916E79700569EEC /* Foundation.framework in Frameworks */,
+				12F6CD90D3694E28B154F383 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +109,7 @@
 				95E191EE1916E79700569EEC /* ToledoTechEventsTests */,
 				95E191C51916E79700569EEC /* Frameworks */,
 				95E191C41916E79700569EEC /* Products */,
+				1876DE4483EB470DA7A6AD6F /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +129,7 @@
 				95E191C81916E79700569EEC /* CoreGraphics.framework */,
 				95E191CA1916E79700569EEC /* UIKit.framework */,
 				95E191E81916E79700569EEC /* XCTest.framework */,
+				36D8A759118F4BA1ADC83249 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -173,10 +183,12 @@
 			children = (
 				95E192061916F5C400569EEC /* Event.h */,
 				95E192081916F5C400569EEC /* Event.m */,
-				95B4B529191ED475002D7F82 /* EventList.h */,
 				95E192071916F5C400569EEC /* Venue.h */,
 				95E192091916F5C400569EEC /* Venue.m */,
-				95B4B52C191ED481002D7F82 /* VenueList.h */,
+				95B4B52F191FD4D4002D7F82 /* EventList.h */,
+				95B4B530191FD4D4002D7F82 /* EventList.m */,
+				95B4B532191FD4F0002D7F82 /* VenueList.h */,
+				95B4B533191FD4F0002D7F82 /* VenueList.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -209,9 +221,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 95E191F81916E79700569EEC /* Build configuration list for PBXNativeTarget "ToledoTechEvents" */;
 			buildPhases = (
+				AA8AF3A5FC5C418F843F9F62 /* Check Pods Manifest.lock */,
 				95E191BF1916E79700569EEC /* Sources */,
 				95E191C01916E79700569EEC /* Frameworks */,
 				95E191C11916E79700569EEC /* Resources */,
+				B7091351A13042368C347878 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -294,6 +308,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AA8AF3A5FC5C418F843F9F62 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B7091351A13042368C347878 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		95E191BF1916E79700569EEC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -303,6 +350,8 @@
 				95E1920B1916F5C400569EEC /* Venue.m in Sources */,
 				95E191D71916E79700569EEC /* AppDelegate.m in Sources */,
 				95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */,
+				95B4B534191FD4F0002D7F82 /* VenueList.m in Sources */,
+				95B4B531191FD4D4002D7F82 /* EventList.m in Sources */,
 				95E1921F1917036300569EEC /* DataController.m in Sources */,
 				95E191D31916E79700569EEC /* main.m in Sources */,
 				95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */,
@@ -427,6 +476,7 @@
 		};
 		95E191F91916E79700569EEC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1876DE4483EB470DA7A6AD6F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -440,6 +490,7 @@
 		};
 		95E191FA1916E79700569EEC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1876DE4483EB470DA7A6AD6F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

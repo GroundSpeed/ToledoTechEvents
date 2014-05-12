@@ -33,7 +33,7 @@ static NSString * const kURL = @"http://toledotechevents.org";
                                                          options:NSJSONReadingMutableContainers
                                                            error:&error];
 
-        NSArray *eventArray = [jsonObjects valueForKey:@"id"];
+//        NSArray *eventArray = [jsonObjects valueForKey:@"id"];
 
 //        for (id key in dictReturn) {
 //            NSLog(@"%@", [dictReturn valueForKey:@"title"]);

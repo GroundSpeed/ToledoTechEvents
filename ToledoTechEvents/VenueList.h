@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Venue.h"
 
-@interface VenueList : NSObject
+@interface VenueList : JSONModel
 
 @property (nonatomic, strong) NSArray<Venue> *venues;
 
