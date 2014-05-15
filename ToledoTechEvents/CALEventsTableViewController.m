@@ -7,26 +7,33 @@
 //
 
 #import "CALEventsTableViewController.h"
-#import "CALEventsDetailViewController.h"
-#import "DataController.h"
-#import "Constants.h"
 
 @implementation CALEventsTableViewController
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self loadData];
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self loadData];
+}
 
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+- (void)loadData
+{
+    [JSONHTTPClient getJSONFromURLWithString:kEventsURL
+                                      params:nil
+                                  completion:^(id json, JSONModelError *err) {
+                                      
+                                      _eventList = [Event arrayOfModelsFromDictionaries:json];
+                                      
+                                      //json fetched
+                                      [self.tableView reloadData];
+                                      
+                                  }];
     
-    DataController *events = [[DataController alloc] init];
-    _dictEvents = [events getEvents];
-    _arrayEvents = [_dictEvents valueForKey:@"title"];
-    _arrayEventDates = [_dictEvents valueForKey:@"start_time"];
 }
 
 #pragma mark - Table view data source
@@ -37,49 +44,55 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [_arrayEvents count];
+    return _eventList.count;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (NSString *)formatDateString:(NSString *)dateWithInitialFormat
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-    
-    NSString *dateWithInitialFormat = [_arrayEventDates objectAtIndex:indexPath.row];
-    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
     NSDate *date = [dateFormatter dateFromString:dateWithInitialFormat];
     
     [dateFormatter setDateFormat:@"MM/dd/yyyy EEEE hh:mm a"];
     NSString *dateWithNewFormat = [dateFormatter stringFromDate:date];
+    return dateWithNewFormat;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)tableView
+       cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    Event *event = _eventList[indexPath.row];
+    
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
     
     UILabel *lblTitle = (UILabel *)[cell viewWithTag:1];
-    lblTitle.text = [_arrayEvents objectAtIndex:indexPath.row];
+    lblTitle.text = event.title;
     
     UILabel *lblDate = (UILabel *)[cell viewWithTag:2];
-    lblDate.text = [NSString stringWithFormat:@"%@", dateWithNewFormat];
+    lblDate.text = [NSString stringWithFormat:@"%@", [self formatDateString:event.start_time]];
     
     tableView.separatorColor = kGreenColor;
-    
-    //_detailViewController setEvent:<#(Events *)#>
-    
-    //[_arrayEventDates objectAtIndex:indexPath.row]
     
     return cell;
 }
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-//     = [self.someArray objectAtIndex:indexPath.row];
-    [self performSegueWithIdentifier:@"eventDetail" sender:self];
+    if ([[segue identifier] isEqualToString:@"eventDetail"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        [_detailViewController setEvent:_eventList[indexPath.row]];
+        Event *event = _eventList[indexPath.row];
+        [[segue destinationViewController] setEvent:event];
+    }
 }
-
 
 
 @end

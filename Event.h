@@ -6,38 +6,23 @@
 //  Copyright (c) 2013 GroundSpeed. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "JSONModel.h"
+#import "Venue.h"
 
-@interface Event : NSObject
+@protocol Event @end
 
-@property(nonatomic) NSInteger EventId;
-@property(nonatomic, strong) NSString * Description;
-@property(nonatomic, strong) NSString * DuplicateId;
-@property(nonatomic, strong) NSString * EndTime;
-@property(nonatomic, strong) NSString * RRule;
-@property(nonatomic, strong) NSString * RsvpUrl;
-@property(nonatomic, strong) NSNumber * SourceId;
-@property(nonatomic, strong) NSString * StartTime;
-@property(nonatomic, strong) NSString * Title;
-@property(nonatomic, strong) NSString * UpdatedAt;
-@property(nonatomic, strong) NSString * Url;
-@property(nonatomic, strong) NSString * VenueDetails;
-@property(nonatomic, strong) NSString * CreatedAt;
-@property(nonatomic, strong) NSNumber * VenueId;
+@interface Event : JSONModel
 
--(id)  initWithEventId: (NSInteger) pEventId
-       WithDescription: (NSString *) pDescription
-       WithDuplicateId: (NSString *) pDuplicateId
-           WithEndTime: (NSString *) pEndTime
-             WithRRule: (NSString *) pRRule
-           WithRsvpUrl: (NSString *) pRsvpUrl
-          WithSourceId: (NSNumber *) pSourceId
-         WithStartTime: (NSString *) pStartTime
-             WithTitle: (NSString *) pTitle
-         WithUpdatedAt: (NSString *) pUpdatedAt
-               WithUrl: (NSString *) pUrl
-      WithVenueDetails: (NSString *) pVenueDetails
-         WithCreatedAt: (NSString *) pCreatedAt
-           WithVenueId: (NSNumber *) pVenueId;
+@property (nonatomic,retain) NSString *description;
+@property (nonatomic,retain) NSString *end_time;
+@property (nonatomic,retain) NSNumber *id;
+@property (nonatomic,retain) NSString *rsvp_url;
+@property (nonatomic,retain) NSString *start_time;
+@property (nonatomic,retain) NSString *title;
+@property (nonatomic,retain) NSString *url;
+@property (nonatomic,retain) NSString *venue_details;
+//@property (nonatomic,assign) NSNumber *venue_id;
+
+//@property (nonatomic,retain) Venue *venue;
 
 @end

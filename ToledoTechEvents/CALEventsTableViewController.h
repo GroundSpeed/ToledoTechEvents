@@ -6,20 +6,20 @@
 //  Copyright (c) 2013 GroundSpeed. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
 #import "CALEventsDetailViewController.h"
-
-@class DataController;
+#import "JSONModelLib.h"
+#import "Constants.h"
 
 @interface CALEventsTableViewController : UITableViewController
 {
-    NSDictionary *_dictEvents;
-    NSMutableArray *_arrayEvents;
-    NSMutableArray *_arrayEventDates;
+    NSMutableArray *_eventList;
 }
 
 @property (nonatomic, strong) CALEventsDetailViewController *detailViewController;
 
-//@property (nonatomic, strong) IBOutlet UILabel *lblTitle;
-//@property (nonatomic, strong) IBOutlet UILabel *lblDate;
+- (void)loadData;
+- (NSString *)formatDateString:(NSString *)dateWithInitialFormat;
+
 
 @end
