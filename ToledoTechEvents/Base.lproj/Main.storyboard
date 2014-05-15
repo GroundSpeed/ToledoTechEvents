@@ -12,6 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.062745101750000004" green="0.2823529541" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell autoresizesSubviews="NO" contentMode="center" selectionStyle="none" indentationLevel="3" indentationWidth="10" reuseIdentifier="Cell" rowHeight="89" id="pM2-Bk-Dla">
                                 <rect key="frame" x="0.0" y="22" width="320" height="89"/>
@@ -171,6 +172,35 @@
             </objects>
             <point key="canvasLocation" x="653" y="498"/>
         </scene>
+        <!--About View Controller - About-->
+        <scene sceneID="dy9-ge-8jr">
+            <objects>
+                <viewController title="About" id="Uf3-Hh-Gkt" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ahw-8r-rJs"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fi0-pz-oCb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="K5N-tx-lJK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ZE-2o-CuB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="520"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="UmQ-fg-G6b"/>
+                    <connections>
+                        <outlet property="webView" destination="7ZE-2o-CuB" id="Ufg-aA-OHc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jap-ku-KLV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="1173"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
@@ -185,6 +215,7 @@
                     <connections>
                         <segue destination="E4l-sq-y4U" kind="relationship" relationship="viewControllers" id="hGF-Rg-WI5"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
+                        <segue destination="Uf3-Hh-Gkt" kind="relationship" relationship="viewControllers" id="EHZ-0N-vge"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>

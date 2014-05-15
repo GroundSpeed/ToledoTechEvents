@@ -25,6 +25,4 @@
 
 //@property (nonatomic,retain) Venue *venue;
 
-+(JSONKeyMapper*)keyMapper;
-
 @end

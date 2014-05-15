@@ -10,7 +10,6 @@
 #import "CALEventsDetailViewController.h"
 #import "JSONModelLib.h"
 #import "Constants.h"
-#import "EventList.h"
 
 @interface CALEventsTableViewController : UITableViewController
 {

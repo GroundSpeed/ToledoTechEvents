@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		12F6CD90D3694E28B154F383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D8A759118F4BA1ADC83249 /* libPods.a */; };
-		95B4B531191FD4D4002D7F82 /* EventList.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4B530191FD4D4002D7F82 /* EventList.m */; };
-		95B4B534191FD4F0002D7F82 /* VenueList.m in Sources */ = {isa = PBXBuildFile; fileRef = 95B4B533191FD4F0002D7F82 /* VenueList.m */; };
+		9548348919207059005F0ABE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9548348819207059005F0ABE /* AboutViewController.m */; };
 		95E191C71916E79700569EEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C61916E79700569EEC /* Foundation.framework */; };
 		95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C81916E79700569EEC /* CoreGraphics.framework */; };
 		95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191CA1916E79700569EEC /* UIKit.framework */; };
@@ -27,7 +26,6 @@
 		95E1920B1916F5C400569EEC /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E192091916F5C400569EEC /* Venue.m */; };
 		95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921A1917036300569EEC /* CALEventsDetailViewController.m */; };
 		95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921B1917036300569EEC /* CALEventsTableViewController.m */; };
-		95E1921F1917036300569EEC /* DataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921C1917036300569EEC /* DataController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,10 +41,8 @@
 /* Begin PBXFileReference section */
 		1876DE4483EB470DA7A6AD6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		36D8A759118F4BA1ADC83249 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		95B4B52F191FD4D4002D7F82 /* EventList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventList.h; sourceTree = "<group>"; };
-		95B4B530191FD4D4002D7F82 /* EventList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventList.m; sourceTree = "<group>"; };
-		95B4B532191FD4F0002D7F82 /* VenueList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenueList.h; sourceTree = "<group>"; };
-		95B4B533191FD4F0002D7F82 /* VenueList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenueList.m; sourceTree = "<group>"; };
+		9548348719207059005F0ABE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		9548348819207059005F0ABE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		95C7E8EB191737B900D43435 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		95E191C31916E79700569EEC /* ToledoTechEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToledoTechEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E191C61916E79700569EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,10 +67,8 @@
 		95E192091916F5C400569EEC /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = ../Venue.m; sourceTree = "<group>"; };
 		95E192171917036300569EEC /* CALEventsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsDetailViewController.h; sourceTree = "<group>"; };
 		95E192181917036300569EEC /* CALEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsTableViewController.h; sourceTree = "<group>"; };
-		95E192191917036300569EEC /* DataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataController.h; sourceTree = "<group>"; };
 		95E1921A1917036300569EEC /* CALEventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALEventsDetailViewController.m; sourceTree = "<group>"; };
 		95E1921B1917036300569EEC /* CALEventsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALEventsTableViewController.m; sourceTree = "<group>"; };
-		95E1921C1917036300569EEC /* DataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,10 +179,6 @@
 				95E192081916F5C400569EEC /* Event.m */,
 				95E192071916F5C400569EEC /* Venue.h */,
 				95E192091916F5C400569EEC /* Venue.m */,
-				95B4B52F191FD4D4002D7F82 /* EventList.h */,
-				95B4B530191FD4D4002D7F82 /* EventList.m */,
-				95B4B532191FD4F0002D7F82 /* VenueList.h */,
-				95B4B533191FD4F0002D7F82 /* VenueList.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -200,8 +190,8 @@
 				95E1921B1917036300569EEC /* CALEventsTableViewController.m */,
 				95E192171917036300569EEC /* CALEventsDetailViewController.h */,
 				95E1921A1917036300569EEC /* CALEventsDetailViewController.m */,
-				95E192191917036300569EEC /* DataController.h */,
-				95E1921C1917036300569EEC /* DataController.m */,
+				9548348719207059005F0ABE /* AboutViewController.h */,
+				9548348819207059005F0ABE /* AboutViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -349,10 +339,8 @@
 				95E1920A1916F5C400569EEC /* Event.m in Sources */,
 				95E1920B1916F5C400569EEC /* Venue.m in Sources */,
 				95E191D71916E79700569EEC /* AppDelegate.m in Sources */,
+				9548348919207059005F0ABE /* AboutViewController.m in Sources */,
 				95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */,
-				95B4B534191FD4F0002D7F82 /* VenueList.m in Sources */,
-				95B4B531191FD4D4002D7F82 /* EventList.m in Sources */,
-				95E1921F1917036300569EEC /* DataController.m in Sources */,
 				95E191D31916E79700569EEC /* main.m in Sources */,
 				95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */,
 			);

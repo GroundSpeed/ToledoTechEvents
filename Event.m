@@ -10,12 +10,4 @@
 
 @implementation Event
 
-+(JSONKeyMapper*)keyMapper
-{
-    return [[JSONKeyMapper alloc] initWithDictionary:@{
-                                                       @"description":@"desc",
-                                                       @"venue_id":@"venue"
-                                                       }];
-}
-
 @end
