@@ -19,7 +19,5 @@
 @property (nonatomic, strong) CALEventsDetailViewController *detailViewController;
 
 - (void)loadData;
-- (NSString *)formatDateString:(NSString *)dateWithInitialFormat;
-
 
 @end

@@ -8,21 +8,21 @@
         <scene sceneID="GJc-pL-74x">
             <objects>
                 <tableViewController title="Events" id="E4l-sq-y4U" customClass="CALEventsTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="89" sectionHeaderHeight="22" sectionFooterHeight="22" id="S97-Xv-g2Z">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="78" sectionHeaderHeight="22" sectionFooterHeight="22" id="S97-Xv-g2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.062745101750000004" green="0.2823529541" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
                         <color key="tintColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
-                            <tableViewCell autoresizesSubviews="NO" contentMode="center" selectionStyle="none" indentationLevel="3" indentationWidth="10" reuseIdentifier="Cell" rowHeight="89" id="pM2-Bk-Dla">
-                                <rect key="frame" x="0.0" y="22" width="320" height="89"/>
+                            <tableViewCell autoresizesSubviews="NO" contentMode="center" selectionStyle="none" indentationLevel="3" indentationWidth="10" reuseIdentifier="Cell" rowHeight="78" id="pM2-Bk-Dla">
+                                <rect key="frame" x="0.0" y="22" width="320" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pM2-Bk-Dla" id="bEN-Mh-R2D">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="77"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="center" text="Title" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-Oe-bqn">
-                                            <rect key="frame" x="95" y="0.0" width="225" height="89"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="center" misplaced="YES" text="Title" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" preferredMaxLayoutWidth="225" translatesAutoresizingMaskIntoConstraints="NO" id="fJF-Oe-bqn">
+                                            <rect key="frame" x="95" y="5" width="225" height="68"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="225" id="h1p-9V-E7M"/>
                                             </constraints>
@@ -30,8 +30,8 @@
                                             <color key="textColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
                                             <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="center" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="75" translatesAutoresizingMaskIntoConstraints="NO" id="Vxw-8b-uwK">
-                                            <rect key="frame" x="12" y="0.0" width="75" height="89"/>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="2" contentMode="center" misplaced="YES" text="Date" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="75" translatesAutoresizingMaskIntoConstraints="NO" id="Vxw-8b-uwK">
+                                            <rect key="frame" x="12" y="5" width="75" height="68"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="75" id="5WX-mo-W2m"/>
                                             </constraints>
@@ -64,7 +64,7 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Events" image="today-50" id="5bq-5d-n97"/>
                     <navigationItem key="navigationItem" id="Ayk-pU-dbC"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black" translucent="NO"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k5V-yB-Ymy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

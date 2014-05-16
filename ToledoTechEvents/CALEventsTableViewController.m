@@ -18,7 +18,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setNeedsStatusBarAppearanceUpdate];
     [self loadData];
+}
+
+-(UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
 }
 
 - (void)loadData
@@ -51,17 +56,6 @@
     return _eventList.count;
 }
 
-- (NSString *)formatDateString:(NSString *)dateWithInitialFormat
-{
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
-    NSDate *date = [dateFormatter dateFromString:dateWithInitialFormat];
-    
-    [dateFormatter setDateFormat:@"MM/dd/yyyy EEEE hh:mm a"];
-    NSString *dateWithNewFormat = [dateFormatter stringFromDate:date];
-    return dateWithNewFormat;
-}
-
 -(UITableViewCell*)tableView:(UITableView *)tableView
        cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -75,7 +69,7 @@
     lblTitle.text = event.title;
     
     UILabel *lblDate = (UILabel *)[cell viewWithTag:2];
-    lblDate.text = [NSString stringWithFormat:@"%@", [self formatDateString:event.start_time]];
+    lblDate.text = [NSString stringWithFormat:@"%@", [GlobalFunctions formatDateString:event.start_time]];
     
     tableView.separatorColor = kGreenColor;
     

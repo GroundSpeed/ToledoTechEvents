@@ -16,6 +16,7 @@
     // Override point for customization after application launch.
     [[UITabBar appearance] setTintColor:[UIColor colorWithRed:(117.0f/255.0f) green:(175.0f/255.0f) blue:(57.0f/255.0f) alpha:1.0]];
 //    [[UITabBar appearance] setBackgroundColor:[UIColor colorWithRed:(13.0f/255.0f) green:(54.0f/255.0f) blue:(81.0f/255.0f) alpha:1.0]];
+    //[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     return YES;
 }
 							

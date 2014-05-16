@@ -7,7 +7,6 @@
 //
 
 #import "JSONModel.h"
-#import "Venue.h"
 
 @protocol Event @end
 
@@ -21,8 +20,5 @@
 @property (nonatomic,retain) NSString *title;
 @property (nonatomic,retain) NSString *url;
 @property (nonatomic,retain) NSString *venue_details;
-//@property (nonatomic,assign) NSNumber *venue_id;
-
-//@property (nonatomic,retain) Venue *venue;
 
 @end

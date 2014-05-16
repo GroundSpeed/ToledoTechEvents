@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		12F6CD90D3694E28B154F383 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 36D8A759118F4BA1ADC83249 /* libPods.a */; };
 		9548348919207059005F0ABE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9548348819207059005F0ABE /* AboutViewController.m */; };
+		95BD0A9919245050007C91A1 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0A9819245050007C91A1 /* GlobalFunctions.m */; };
 		95E191C71916E79700569EEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C61916E79700569EEC /* Foundation.framework */; };
 		95E191C91916E79700569EEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191C81916E79700569EEC /* CoreGraphics.framework */; };
 		95E191CB1916E79700569EEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95E191CA1916E79700569EEC /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		95E191F31916E79700569EEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95E191F11916E79700569EEC /* InfoPlist.strings */; };
 		95E191F51916E79700569EEC /* ToledoTechEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E191F41916E79700569EEC /* ToledoTechEventsTests.m */; };
 		95E1920A1916F5C400569EEC /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E192081916F5C400569EEC /* Event.m */; };
-		95E1920B1916F5C400569EEC /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E192091916F5C400569EEC /* Venue.m */; };
 		95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921A1917036300569EEC /* CALEventsDetailViewController.m */; };
 		95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E1921B1917036300569EEC /* CALEventsTableViewController.m */; };
 /* End PBXBuildFile section */
@@ -43,6 +43,8 @@
 		36D8A759118F4BA1ADC83249 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9548348719207059005F0ABE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		9548348819207059005F0ABE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		95BD0A9719245050007C91A1 /* GlobalFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunctions.h; sourceTree = "<group>"; };
+		95BD0A9819245050007C91A1 /* GlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
 		95C7E8EB191737B900D43435 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		95E191C31916E79700569EEC /* ToledoTechEvents.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToledoTechEvents.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95E191C61916E79700569EEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,9 +64,7 @@
 		95E191F21916E79700569EEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		95E191F41916E79700569EEC /* ToledoTechEventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToledoTechEventsTests.m; sourceTree = "<group>"; };
 		95E192061916F5C400569EEC /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Event.h; path = ../Event.h; sourceTree = "<group>"; };
-		95E192071916F5C400569EEC /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Venue.h; path = ../Venue.h; sourceTree = "<group>"; };
 		95E192081916F5C400569EEC /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Event.m; path = ../Event.m; sourceTree = "<group>"; };
-		95E192091916F5C400569EEC /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Venue.m; path = ../Venue.m; sourceTree = "<group>"; };
 		95E192171917036300569EEC /* CALEventsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsDetailViewController.h; sourceTree = "<group>"; };
 		95E192181917036300569EEC /* CALEventsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALEventsTableViewController.h; sourceTree = "<group>"; };
 		95E1921A1917036300569EEC /* CALEventsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALEventsDetailViewController.m; sourceTree = "<group>"; };
@@ -150,6 +150,8 @@
 				95E191D21916E79700569EEC /* main.m */,
 				95E191D41916E79700569EEC /* ToledoTechEvents-Prefix.pch */,
 				95C7E8EB191737B900D43435 /* Constants.h */,
+				95BD0A9719245050007C91A1 /* GlobalFunctions.h */,
+				95BD0A9819245050007C91A1 /* GlobalFunctions.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -177,8 +179,6 @@
 			children = (
 				95E192061916F5C400569EEC /* Event.h */,
 				95E192081916F5C400569EEC /* Event.m */,
-				95E192071916F5C400569EEC /* Venue.h */,
-				95E192091916F5C400569EEC /* Venue.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -337,12 +337,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				95E1920A1916F5C400569EEC /* Event.m in Sources */,
-				95E1920B1916F5C400569EEC /* Venue.m in Sources */,
 				95E191D71916E79700569EEC /* AppDelegate.m in Sources */,
 				9548348919207059005F0ABE /* AboutViewController.m in Sources */,
 				95E1921E1917036300569EEC /* CALEventsTableViewController.m in Sources */,
 				95E191D31916E79700569EEC /* main.m in Sources */,
 				95E1921D1917036300569EEC /* CALEventsDetailViewController.m in Sources */,
+				95BD0A9919245050007C91A1 /* GlobalFunctions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
