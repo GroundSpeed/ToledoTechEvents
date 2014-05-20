@@ -21,6 +21,28 @@
     _lblStartDate.text = [GlobalFunctions formatDateString:_event.startTime];
     _lblEndDate.text = [GlobalFunctions formatDateString:_event.endTime];
     _txtDescription.text = _event.description;
+    
+    [self createRsvpButton];
+}
+
+- (void)createRsvpButton
+{
+    UIColor *blueColor = kBlueColor;
+    UIColor *greenColor = kGreenColor;
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    [button setFrame:CGRectMake(19, 176, 280, 25)];
+    [button setTitle:@"RSVP" forState:UIControlStateNormal];
+    button.titleLabel.font = [UIFont boldSystemFontOfSize:16.f];
+    [button setBackgroundColor:greenColor];
+    [button setTitleColor:blueColor forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(openRsvpUrl) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+-(void)openRsvpUrl
+{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_event.rsvpUrl]];
 }
 
 - (void)formatDetailView
