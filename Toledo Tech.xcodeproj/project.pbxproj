@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2071932C4EB00870AC8 /* EventNavigationController.m */; };
 		95BD0ACD1925C27A007C91A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACC1925C27A007C91A1 /* Foundation.framework */; };
 		95BD0ACF1925C27A007C91A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */; };
 		95BD0AD11925C27A007C91A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0AD01925C27A007C91A1 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9579F2061932C4EB00870AC8 /* EventNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNavigationController.h; sourceTree = "<group>"; };
+		9579F2071932C4EB00870AC8 /* EventNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNavigationController.m; sourceTree = "<group>"; };
 		95BD0AC91925C27A007C91A1 /* Toledo Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toledo Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BD0ACC1925C27A007C91A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -196,6 +199,8 @@
 		95BD0AFF1925C70A007C91A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9579F2061932C4EB00870AC8 /* EventNavigationController.h */,
+				9579F2071932C4EB00870AC8 /* EventNavigationController.m */,
 				95BD0B001926B24D007C91A1 /* EventsTableViewController.h */,
 				95BD0B011926B24E007C91A1 /* EventsTableViewController.m */,
 				95BD0B061926D417007C91A1 /* EventsDetailViewController.h */,
@@ -304,6 +309,7 @@
 			files = (
 				95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */,
 				95BD0ADD1925C27A007C91A1 /* AppDelegate.m in Sources */,
+				9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */,
 				95BD0B021926B24E007C91A1 /* EventsTableViewController.m in Sources */,
 				95BD0B081926D417007C91A1 /* EventsDetailViewController.m in Sources */,
 				95BD0B1119270E30007C91A1 /* Event.m in Sources */,

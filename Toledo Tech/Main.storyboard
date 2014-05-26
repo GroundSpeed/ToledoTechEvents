@@ -15,7 +15,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="vGT-2A-vYM" kind="relationship" relationship="viewControllers" id="6Wi-k6-vfO"/>
+                        <segue destination="JtO-eG-hx4" kind="relationship" relationship="viewControllers" id="6Wi-k6-vfO"/>
                         <segue destination="eHN-TH-oXg" kind="relationship" relationship="viewControllers" id="0uO-J1-wcZ"/>
                     </connections>
                 </tabBarController>
@@ -35,7 +35,7 @@
                         <color key="sectionIndexBackgroundColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="3" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="89" id="j89-73-uAY">
-                                <rect key="frame" x="0.0" y="22" width="320" height="89"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="89"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j89-73-uAY" id="faY-M1-agB">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
@@ -64,18 +64,11 @@
                             <outlet property="delegate" destination="vGT-2A-vYM" id="YVD-cB-aKw"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Events" image="today-50" id="w82-Rr-gs9"/>
+                    <navigationItem key="navigationItem" title="Events" id="SS3-ff-ZZ4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UV4-zd-Hz6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationBar contentMode="scaleToFill" id="5Fe-5D-6Mw">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <items>
-                        <navigationItem title="Title" id="sVM-rD-1QP"/>
-                    </items>
-                </navigationBar>
             </objects>
-            <point key="canvasLocation" x="322" y="-458"/>
+            <point key="canvasLocation" x="848" y="-458"/>
         </scene>
         <!--Events Detail View Controller-->
         <scene sceneID="5J5-nw-ApY">
@@ -183,7 +176,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yWZ-ue-b5L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="771" y="-458"/>
+            <point key="canvasLocation" x="1297" y="-458"/>
         </scene>
         <!--About View Controller - About-->
         <scene sceneID="Rbe-mf-gdc">
@@ -213,6 +206,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NdN-zh-awL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="323" y="229"/>
+        </scene>
+        <!--Event Navigation Controller - Events-->
+        <scene sceneID="6PS-KP-6QE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="JtO-eG-hx4" customClass="EventNavigationController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Events" image="today-50" id="w82-Rr-gs9"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sfg-wv-Jlz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.062745101750000004" green="0.2823529541" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="barTintColor" red="0.062745101750000004" green="0.2823529541" blue="0.38823533059999998" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.55294120309999995" green="0.77647066119999997" blue="0.25490197539999998" alpha="1" colorSpace="deviceRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vGT-2A-vYM" kind="relationship" relationship="rootViewController" id="HyQ-oa-MVD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5FU-hl-3vZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-458"/>
         </scene>
     </scenes>
     <resources>
