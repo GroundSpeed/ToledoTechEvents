@@ -26,6 +26,7 @@
 		95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0A1926E1B1007C91A1 /* AboutViewController.m */; };
 		95BD0B0E192708DC007C91A1 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */; };
 		95BD0B1119270E30007C91A1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B1019270E30007C91A1 /* Event.m */; };
+		95DA615A192AEE3700EF7D6F /* Venues.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA6159192AEE3700EF7D6F /* Venues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
 		95BD0B0F19270E30007C91A1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		95BD0B1019270E30007C91A1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		95DA6158192AEE3700EF7D6F /* Venues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venues.h; sourceTree = "<group>"; };
+		95DA6159192AEE3700EF7D6F /* Venues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venues.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +179,8 @@
 			children = (
 				95BD0B0F19270E30007C91A1 /* Event.h */,
 				95BD0B1019270E30007C91A1 /* Event.m */,
+				95DA6158192AEE3700EF7D6F /* Venues.h */,
+				95DA6159192AEE3700EF7D6F /* Venues.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				95BD0B081926D417007C91A1 /* EventsDetailViewController.m in Sources */,
 				95BD0B1119270E30007C91A1 /* Event.m in Sources */,
 				95BD0AD91925C27A007C91A1 /* main.m in Sources */,
+				95DA615A192AEE3700EF7D6F /* Venues.m in Sources */,
 				95BD0B051926C4E2007C91A1 /* Constants.m in Sources */,
 				95BD0B0E192708DC007C91A1 /* GlobalFunctions.m in Sources */,
 			);

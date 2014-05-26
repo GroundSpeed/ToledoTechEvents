@@ -10,6 +10,7 @@
 #import "Constants.h"
 #import "GlobalFunctions.h"
 #import "Event.h"
+#import "Venues.h"
 
 @interface EventsTableViewController ()
 {
@@ -117,6 +118,13 @@
             event.rsvpUrl = [dictEvent objectForKey:@"rsvp_url"];
             event.url = [dictEvent objectForKey:@"url"];
             event.venueDetails = [dictEvent objectForKey:@"venue_id"];
+            
+            Venues *venue = [Venues alloc];
+            NSDictionary *dictVenue = [dictEvent objectForKey:@"venue"];
+            venue.title = [dictVenue objectForKey:@"title"];
+            venue.address = [dictVenue objectForKey:@"address"];
+            venue.url = [dictVenue objectForKey:@"url"];
+            event.venue = venue;
             
             [arrayEventModel addObject:event];
         }
