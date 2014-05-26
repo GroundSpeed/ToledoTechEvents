@@ -14,18 +14,18 @@
 @property(nonatomic,retain) NSString *address;
 @property(nonatomic,retain) NSString *description;
 @property(nonatomic,retain) NSString *email;
-//@property(nonatomic,retain) NSNumber *events_count;
+@property(nonatomic,retain) NSNumber *events_count;
 @property(nonatomic,retain) NSNumber *id;
-//@property(nonatomic,retain) NSString *latitude;
-//@property(nonatomic,retain) NSString *locality;
-//@property(nonatomic,retain) NSString *longitude;
-//@property(nonatomic,retain) NSString *postal_code;
-//@property(nonatomic,retain) NSString *region;
-//@property(nonatomic,retain) NSNumber *source_id;
+@property(nonatomic,retain) NSString *latitude;
+@property(nonatomic,retain) NSString *locality;
+@property(nonatomic,retain) NSString *longitude;
+@property(nonatomic,retain) NSString *postal_code;
+@property(nonatomic,retain) NSString *region;
+@property(nonatomic,retain) NSNumber *source_id;
 @property(nonatomic,retain) NSString *street_address;
 @property(nonatomic,retain) NSString *telephone;
 @property(nonatomic,retain) NSString *title;
-//@property(nonatomic,retain) NSString *updated_at;
+@property(nonatomic,retain) NSString *updated_at;
 @property(nonatomic,retain) NSString *url;
 @property(nonatomic,retain) NSString *wifi;
 

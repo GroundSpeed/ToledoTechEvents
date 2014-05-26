@@ -123,6 +123,11 @@
             NSDictionary *dictVenue = [dictEvent objectForKey:@"venue"];
             venue.title = [dictVenue objectForKey:@"title"];
             venue.address = [dictVenue objectForKey:@"address"];
+            venue.street_address = [dictVenue objectForKey:@"street_address"];
+            venue.latitude = [dictVenue objectForKey:@"latitude"];
+            venue.longitude = [dictVenue objectForKey:@"longitude"];
+            venue.locality = [dictVenue objectForKey:@"locality"];
+            venue.wifi = [dictVenue objectForKey:@"wifi"];
             venue.url = [dictVenue objectForKey:@"url"];
             event.venue = venue;
             
