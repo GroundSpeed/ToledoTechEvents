@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2071932C4EB00870AC8 /* EventNavigationController.m */; };
+		9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */; };
+		9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2121938DC0600870AC8 /* VenuesNavigationController.m */; };
 		95BD0ACD1925C27A007C91A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACC1925C27A007C91A1 /* Foundation.framework */; };
 		95BD0ACF1925C27A007C91A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */; };
 		95BD0AD11925C27A007C91A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0AD01925C27A007C91A1 /* UIKit.framework */; };
@@ -43,6 +45,10 @@
 /* Begin PBXFileReference section */
 		9579F2061932C4EB00870AC8 /* EventNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNavigationController.h; sourceTree = "<group>"; };
 		9579F2071932C4EB00870AC8 /* EventNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNavigationController.m; sourceTree = "<group>"; };
+		9579F20E1938D7F200870AC8 /* VenuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesTableViewController.h; sourceTree = "<group>"; };
+		9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesTableViewController.m; sourceTree = "<group>"; };
+		9579F2111938DC0600870AC8 /* VenuesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesNavigationController.h; sourceTree = "<group>"; };
+		9579F2121938DC0600870AC8 /* VenuesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesNavigationController.m; sourceTree = "<group>"; };
 		95BD0AC91925C27A007C91A1 /* Toledo Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toledo Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BD0ACC1925C27A007C91A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -100,6 +106,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9579F20C1938D7C400870AC8 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				9579F2061932C4EB00870AC8 /* EventNavigationController.h */,
+				9579F2071932C4EB00870AC8 /* EventNavigationController.m */,
+				95BD0B001926B24D007C91A1 /* EventsTableViewController.h */,
+				95BD0B011926B24E007C91A1 /* EventsTableViewController.m */,
+				95BD0B061926D417007C91A1 /* EventsDetailViewController.h */,
+				95BD0B071926D417007C91A1 /* EventsDetailViewController.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		9579F20D1938D7D300870AC8 /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				9579F2111938DC0600870AC8 /* VenuesNavigationController.h */,
+				9579F2121938DC0600870AC8 /* VenuesNavigationController.m */,
+				9579F20E1938D7F200870AC8 /* VenuesTableViewController.h */,
+				9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */,
+			);
+			name = Venues;
+			sourceTree = "<group>";
+		};
 		95BD0AC01925C27A007C91A1 = {
 			isa = PBXGroup;
 			children = (
@@ -199,12 +229,8 @@
 		95BD0AFF1925C70A007C91A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9579F2061932C4EB00870AC8 /* EventNavigationController.h */,
-				9579F2071932C4EB00870AC8 /* EventNavigationController.m */,
-				95BD0B001926B24D007C91A1 /* EventsTableViewController.h */,
-				95BD0B011926B24E007C91A1 /* EventsTableViewController.m */,
-				95BD0B061926D417007C91A1 /* EventsDetailViewController.h */,
-				95BD0B071926D417007C91A1 /* EventsDetailViewController.m */,
+				9579F20D1938D7D300870AC8 /* Venues */,
+				9579F20C1938D7C400870AC8 /* Events */,
 				95BD0B091926E1B1007C91A1 /* AboutViewController.h */,
 				95BD0B0A1926E1B1007C91A1 /* AboutViewController.m */,
 			);
@@ -308,9 +334,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */,
+				9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */,
 				95BD0ADD1925C27A007C91A1 /* AppDelegate.m in Sources */,
 				9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */,
 				95BD0B021926B24E007C91A1 /* EventsTableViewController.m in Sources */,
+				9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */,
 				95BD0B081926D417007C91A1 /* EventsDetailViewController.m in Sources */,
 				95BD0B1119270E30007C91A1 /* Event.m in Sources */,
 				95BD0AD91925C27A007C91A1 /* main.m in Sources */,
