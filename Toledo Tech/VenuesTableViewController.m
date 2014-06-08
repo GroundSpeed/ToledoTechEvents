@@ -1,25 +1,21 @@
 //
-//  EventsTableViewController.m
+//  VenuesTableViewController.m
 //  Toledo Tech
 //
-//  Created by Don Miller on 5/16/14.
+//  Created by Don Miller on 5/30/14.
 //  Copyright (c) 2014 GroundSpeed. All rights reserved.
 //
 
-#import "EventsTableViewController.h"
-#import "Constants.h"
-#import "GlobalFunctions.h"
-#import "Event.h"
-#import "Venues.h"
+#import "VenuesTableViewController.h"
 #import <Parse/Parse.h>
 
-@interface EventsTableViewController ()
+@interface VenuesTableViewController ()
 {
-    NSMutableArray *arrayEventModel;
+    NSMutableArray *arrayVenueModel;
 }
 @end
 
-@implementation EventsTableViewController
+@implementation VenuesTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -33,9 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Events"}];
+    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Venues"}];
     [self setNeedsStatusBarAppearanceUpdate];
-    arrayEventModel = [[NSMutableArray alloc] initWithObjects:nil];
+    arrayVenueModel = [[NSMutableArray alloc] initWithObjects:nil];
     [self parseJSON];
 }
 
@@ -62,25 +58,23 @@
  numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [arrayEventModel count];
+    return [arrayVenueModel count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"VenueCell" forIndexPath:indexPath];
     
-    Event *event = arrayEventModel[indexPath.row];
+    Venues *venue = arrayVenueModel[indexPath.row];
     
-    UILabel *lblDate = (UILabel *)[cell viewWithTag:2];
-    lblDate.backgroundColor = kBlueColor;
-    lblDate.textColor = kGreenColor;
-    lblDate.text = [GlobalFunctions formatDateString:event.startTime];
+    cell.textLabel.backgroundColor = kBlueColor;
+    cell.textLabel.textColor = kGreenColor;
+    cell.textLabel.text = venue.title;
     
-    UILabel *lblTitle = (UILabel *)[cell viewWithTag:1];
-    lblTitle.backgroundColor = kBlueColor;
-    lblTitle.textColor = kGreenColor;
-    lblTitle.text = event.title;
-
+    cell.detailTextLabel.backgroundColor = kBlueColor;
+    cell.detailTextLabel.textColor = kGreenColor;
+    cell.detailTextLabel.text = venue.address;
+    
     tableView.backgroundColor = kBlueColor;
     tableView.separatorColor = kGreenColor;
     cell.backgroundColor = kBlueColor;
@@ -88,10 +82,11 @@
     return cell;
 }
 
+
 -(void)parseJSON
 {
     NSError *error = nil;
-    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:kEventsURL]];
+    NSData *jsonData = [NSData dataWithContentsOfURL:[NSURL URLWithString:kVenuesURL]];
     
     if (jsonData)
     {
@@ -99,8 +94,8 @@
                                                          options:NSJSONReadingMutableContainers
                                                            error:&error];
         
-        NSArray *arrayEvents = [[NSArray alloc] initWithArray:jsonObjects];
-
+        NSArray *arrayVenues = [[NSArray alloc] initWithArray:jsonObjects];
+        
         if (error)
         {
             NSLog(@"error is %@", [error localizedDescription]);
@@ -109,21 +104,10 @@
             return;
         }
         
-        for (NSDictionary *dictEvent in arrayEvents)
+        for (NSDictionary *dictVenue in arrayVenues)
         {
-            Event *event = [Event alloc];
-            
-            event.title = [dictEvent objectForKey:@"title"];
-            event.startTime = [dictEvent objectForKey:@"start_time"];
-            event.description = [dictEvent objectForKey:@"description"];
-            event.endTime = [dictEvent objectForKey:@"end_time"];
-            event.eventId = [dictEvent objectForKey:@"id"];
-            event.rsvpUrl = [dictEvent objectForKey:@"rsvp_url"];
-            event.url = [dictEvent objectForKey:@"url"];
-            event.venueDetails = [dictEvent objectForKey:@"venue_id"];
-            
             Venues *venue = [Venues alloc];
-            NSDictionary *dictVenue = [dictEvent objectForKey:@"venue"];
+            
             venue.title = [dictVenue objectForKey:@"title"];
             venue.address = [dictVenue objectForKey:@"address"];
             venue.street_address = [dictVenue objectForKey:@"street_address"];
@@ -132,9 +116,8 @@
             venue.locality = [dictVenue objectForKey:@"locality"];
             venue.wifi = [dictVenue objectForKey:@"wifi"];
             venue.url = [dictVenue objectForKey:@"url"];
-            event.venue = venue;
             
-            [arrayEventModel addObject:event];
+            [arrayVenueModel addObject:venue];
         }
     }
     else
@@ -145,12 +128,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"eventDetail"])
+    if ([[segue identifier] isEqualToString:@"venueDetail"])
     {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        [_detailViewController setEvent:arrayEventModel[indexPath.row]];
-        Event *event = arrayEventModel[indexPath.row];
-        [[segue destinationViewController] setEvent:event];
+        [_detailViewController setVenue:arrayVenueModel[indexPath.row]];
+        Venues *venue = arrayVenueModel[indexPath.row];
+        [[segue destinationViewController] setVenue:venue];
     }
 }
 

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Constants.h"
+#import <Parse/Parse.h>
 
 @implementation AppDelegate
 
@@ -17,6 +18,10 @@
     [[UITabBar appearance] setTintColor:green];
     UIColor *blue = kBlueColor;
     [[UITabBar appearance] setBarTintColor:blue];
+
+    [Parse setApplicationId:kApplicationId clientKey:kClientKey];
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+        
     return YES;
 }
 
