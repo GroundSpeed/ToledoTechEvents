@@ -7,6 +7,7 @@
 //
 
 #import "VenuesTableViewController.h"
+#import <Parse/Parse.h>
 
 @interface VenuesTableViewController ()
 {
@@ -28,6 +29,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Venues"}];
     [self setNeedsStatusBarAppearanceUpdate];
     arrayVenueModel = [[NSMutableArray alloc] initWithObjects:nil];
     [self parseJSON];
@@ -121,6 +123,17 @@
     else
     {
         // Handle Error
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"venueDetail"])
+    {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        [_detailViewController setVenue:arrayVenueModel[indexPath.row]];
+        Venues *venue = arrayVenueModel[indexPath.row];
+        [[segue destinationViewController] setVenue:venue];
     }
 }
 

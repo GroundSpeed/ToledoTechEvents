@@ -17,4 +17,9 @@
 #define kVenuesURL @"http://toledotechevents.org/venues.json"
 #define kAboutURL @"http://toledotechevents.org/about"
 
+#define METERS_PER_MILE 1609.344
+
+#define kApplicationId  @"sR19JSDx8pwkOLkT56NUvakq3Kf79MHAxP5T6WSe"
+#define kClientKey      @"sELqhEaSGxfsSNPhJmcVdPK5qKa88UQSyR5PugA2"
+
 @end

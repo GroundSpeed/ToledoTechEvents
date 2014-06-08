@@ -8,6 +8,7 @@
 
 #import "EventsDetailViewController.h"
 #import "Constants.h"
+#import <Parse/Parse.h>
 
 @interface EventsDetailViewController ()
 
@@ -82,6 +83,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Event Detail"}];
     [self formatDetailView];
 }
 

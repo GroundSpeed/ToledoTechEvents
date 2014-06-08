@@ -10,23 +10,23 @@
 
 @interface Venues : NSObject
 
-@property(nonatomic,retain) NSString *access_notes;
-@property(nonatomic,retain) NSString *address;
-@property(nonatomic,retain) NSString *description;
-@property(nonatomic,retain) NSString *email;
-@property(nonatomic,retain) NSNumber *events_count;
-@property(nonatomic,retain) NSNumber *id;
-@property(nonatomic,retain) NSString *latitude;
-@property(nonatomic,retain) NSString *locality;
-@property(nonatomic,retain) NSString *longitude;
-@property(nonatomic,retain) NSString *postal_code;
-@property(nonatomic,retain) NSString *region;
-@property(nonatomic,retain) NSNumber *source_id;
-@property(nonatomic,retain) NSString *street_address;
-@property(nonatomic,retain) NSString *telephone;
-@property(nonatomic,retain) NSString *title;
-@property(nonatomic,retain) NSString *updated_at;
-@property(nonatomic,retain) NSString *url;
-@property(nonatomic,retain) NSString *wifi;
+@property(nonatomic, strong) NSString *access_notes;
+@property(nonatomic, strong) NSString *address;
+@property(nonatomic, strong) NSString *description;
+@property(nonatomic, strong) NSString *email;
+@property(nonatomic, strong) NSNumber *events_count;
+@property(nonatomic, strong) NSNumber *id;
+@property(nonatomic, strong) NSNumber *latitude;
+@property(nonatomic, strong) NSString *locality;
+@property(nonatomic, strong) NSNumber *longitude;
+@property(nonatomic, strong) NSString *postal_code;
+@property(nonatomic, strong) NSString *region;
+@property(nonatomic, strong) NSNumber *source_id;
+@property(nonatomic, strong) NSString *street_address;
+@property(nonatomic, strong) NSString *telephone;
+@property(nonatomic, strong) NSString *title;
+@property(nonatomic, strong) NSString *updated_at;
+@property(nonatomic, strong) NSString *url;
+@property(nonatomic, strong) NSString *wifi;
 
 @end

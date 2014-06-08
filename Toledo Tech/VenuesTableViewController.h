@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 #import "Venues.h"
+#import "VenuesDetailViewController.h"
 
 @interface VenuesTableViewController : UITableViewController
+
+@property (nonatomic, strong) VenuesDetailViewController *detailViewController;
 
 @end

@@ -11,6 +11,7 @@
 #import "GlobalFunctions.h"
 #import "Event.h"
 #import "Venues.h"
+#import <Parse/Parse.h>
 
 @interface EventsTableViewController ()
 {
@@ -32,7 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];    
+    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Events"}];
+    [self setNeedsStatusBarAppearanceUpdate];
     arrayEventModel = [[NSMutableArray alloc] initWithObjects:nil];
     [self parseJSON];
 }
