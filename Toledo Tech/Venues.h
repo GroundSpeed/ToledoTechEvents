@@ -12,7 +12,7 @@
 
 @property(nonatomic, strong) NSString *access_notes;
 @property(nonatomic, strong) NSString *address;
-@property(nonatomic, strong) NSString *description;
+@property(nonatomic, strong) NSString *venuDescription;
 @property(nonatomic, strong) NSString *email;
 @property(nonatomic, strong) NSNumber *events_count;
 @property(nonatomic, strong) NSNumber *id;

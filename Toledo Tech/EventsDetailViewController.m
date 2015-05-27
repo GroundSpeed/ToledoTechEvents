@@ -21,7 +21,7 @@
     _lblTitle.text = _event.title;
     _lblStartDate.text = [GlobalFunctions formatDateString:_event.startTime];
     _lblEndDate.text = [GlobalFunctions formatDateString:_event.endTime];
-    _txtDescription.text = _event.description;
+    _txtDescription.text = _event.eventDescription;
     _lblVenue.text = _event.venue.title;
     
     if ([_event.rsvpUrl isEqual: @""])
