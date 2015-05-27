@@ -11,7 +11,7 @@
 
 @interface Event : NSObject
 
-@property (nonatomic,retain) NSString *description;
+@property (nonatomic,retain) NSString *eventDescription;
 @property (nonatomic,retain) NSString *endTime;
 @property (nonatomic,retain) NSNumber *eventId;
 @property (nonatomic,retain) NSString *rsvpUrl;

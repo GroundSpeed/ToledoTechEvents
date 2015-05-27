@@ -10,6 +10,7 @@
 		9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2071932C4EB00870AC8 /* EventNavigationController.m */; };
 		9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */; };
 		9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2121938DC0600870AC8 /* VenuesNavigationController.m */; };
+		958F38A81B16721700E65621 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958F38A71B16721700E65621 /* Parse.framework */; };
 		959F43DF1939891F00F6FF8B /* VenuesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959F43DE1939891F00F6FF8B /* VenuesDetailViewController.m */; };
 		959F43E1193A1F3200F6FF8B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959F43E0193A1F3200F6FF8B /* MapKit.framework */; };
 		95BD0ACD1925C27A007C91A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACC1925C27A007C91A1 /* Foundation.framework */; };
@@ -31,7 +32,6 @@
 		95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0A1926E1B1007C91A1 /* AboutViewController.m */; };
 		95BD0B0E192708DC007C91A1 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */; };
 		95BD0B1119270E30007C91A1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B1019270E30007C91A1 /* Event.m */; };
-		95BD8E9F1943CA2500814352 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8E9E1943CA2500814352 /* Parse.framework */; };
 		95BD8EA11943CCBE00814352 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA01943CCBE00814352 /* CFNetwork.framework */; };
 		95BD8EA31943CCE000814352 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA21943CCE000814352 /* CoreLocation.framework */; };
 		95BD8EA51943CD0D00814352 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA41943CD0D00814352 /* QuartzCore.framework */; };
@@ -61,6 +61,7 @@
 		9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesTableViewController.m; sourceTree = "<group>"; };
 		9579F2111938DC0600870AC8 /* VenuesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesNavigationController.h; sourceTree = "<group>"; };
 		9579F2121938DC0600870AC8 /* VenuesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesNavigationController.m; sourceTree = "<group>"; };
+		958F38A71B16721700E65621 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		959F43DD1939891F00F6FF8B /* VenuesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesDetailViewController.h; sourceTree = "<group>"; };
 		959F43DE1939891F00F6FF8B /* VenuesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesDetailViewController.m; sourceTree = "<group>"; };
 		959F43E0193A1F3200F6FF8B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -93,7 +94,6 @@
 		95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
 		95BD0B0F19270E30007C91A1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		95BD0B1019270E30007C91A1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
-		95BD8E9E1943CA2500814352 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		95BD8EA01943CCBE00814352 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		95BD8EA21943CCE000814352 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		95BD8EA41943CD0D00814352 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -119,9 +119,9 @@
 				95BD8EA91943CD2700814352 /* SystemConfiguration.framework in Frameworks */,
 				95BD8EA71943CD1900814352 /* Security.framework in Frameworks */,
 				95BD8EA51943CD0D00814352 /* QuartzCore.framework in Frameworks */,
+				958F38A81B16721700E65621 /* Parse.framework in Frameworks */,
 				95BD8EA31943CCE000814352 /* CoreLocation.framework in Frameworks */,
 				95BD8EA11943CCBE00814352 /* CFNetwork.framework in Frameworks */,
-				95BD8E9F1943CA2500814352 /* Parse.framework in Frameworks */,
 				959F43E1193A1F3200F6FF8B /* MapKit.framework in Frameworks */,
 				95BD0ACF1925C27A007C91A1 /* CoreGraphics.framework in Frameworks */,
 				95BD0AD11925C27A007C91A1 /* UIKit.framework in Frameworks */,
@@ -190,6 +190,7 @@
 		95BD0ACB1925C27A007C91A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				958F38A71B16721700E65621 /* Parse.framework */,
 				95BD8EAE1943CE1900814352 /* MobileCoreServices.framework */,
 				95BD8EAC1943CD6500814352 /* libz.dylib */,
 				95BD8EAA1943CD3B00814352 /* AudioToolbox.framework */,
@@ -198,7 +199,6 @@
 				95BD8EA41943CD0D00814352 /* QuartzCore.framework */,
 				95BD8EA21943CCE000814352 /* CoreLocation.framework */,
 				95BD8EA01943CCBE00814352 /* CFNetwork.framework */,
-				95BD8E9E1943CA2500814352 /* Parse.framework */,
 				959F43E0193A1F3200F6FF8B /* MapKit.framework */,
 				95BD0ACC1925C27A007C91A1 /* Foundation.framework */,
 				95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */,
@@ -334,6 +334,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GroundSpeed;
 				TargetAttributes = {
+					95BD0AC81925C27A007C91A1 = {
+						DevelopmentTeam = 2NDR5C7SVU;
+					};
 					95BD0AE31925C27A007C91A1 = {
 						TestTargetID = 95BD0AC81925C27A007C91A1;
 					};
@@ -513,9 +516,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/donmiller/Downloads,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Toledo Tech/Toledo Tech-Prefix.pch";
@@ -530,9 +535,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/donmiller/Downloads,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Toledo Tech/Toledo Tech-Prefix.pch";

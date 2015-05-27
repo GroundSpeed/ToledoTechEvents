@@ -115,7 +115,7 @@
             
             event.title = [dictEvent objectForKey:@"title"];
             event.startTime = [dictEvent objectForKey:@"start_time"];
-            event.description = [dictEvent objectForKey:@"description"];
+            event.eventDescription = [dictEvent objectForKey:@"description"];
             event.endTime = [dictEvent objectForKey:@"end_time"];
             event.eventId = [dictEvent objectForKey:@"id"];
             event.rsvpUrl = [dictEvent objectForKey:@"rsvp_url"];
