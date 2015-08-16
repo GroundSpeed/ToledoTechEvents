@@ -10,6 +10,8 @@
 #import "Constants.h"
 #import "GlobalFunctions.h"
 #import "Event.h"
+#import "Venues.h"
+#import <Parse/Parse.h>
 
 @interface EventsTableViewController ()
 {
@@ -31,7 +33,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setNeedsStatusBarAppearanceUpdate];    
+    [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Events"}];
+    [self setNeedsStatusBarAppearanceUpdate];
     arrayEventModel = [[NSMutableArray alloc] initWithObjects:nil];
     [self parseJSON];
 }
@@ -55,7 +58,8 @@
     return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
     return [arrayEventModel count];
@@ -111,12 +115,24 @@
             
             event.title = [dictEvent objectForKey:@"title"];
             event.startTime = [dictEvent objectForKey:@"start_time"];
-            event.description = [dictEvent objectForKey:@"description"];
+            event.eventDescription = [dictEvent objectForKey:@"description"];
             event.endTime = [dictEvent objectForKey:@"end_time"];
             event.eventId = [dictEvent objectForKey:@"id"];
             event.rsvpUrl = [dictEvent objectForKey:@"rsvp_url"];
             event.url = [dictEvent objectForKey:@"url"];
             event.venueDetails = [dictEvent objectForKey:@"venue_id"];
+            
+            Venues *venue = [Venues alloc];
+            NSDictionary *dictVenue = [dictEvent objectForKey:@"venue"];
+            venue.title = [dictVenue objectForKey:@"title"];
+            venue.address = [dictVenue objectForKey:@"address"];
+            venue.street_address = [dictVenue objectForKey:@"street_address"];
+            venue.latitude = [dictVenue objectForKey:@"latitude"];
+            venue.longitude = [dictVenue objectForKey:@"longitude"];
+            venue.locality = [dictVenue objectForKey:@"locality"];
+            venue.wifi = [dictVenue objectForKey:@"wifi"];
+            venue.url = [dictVenue objectForKey:@"url"];
+            event.venue = venue;
             
             [arrayEventModel addObject:event];
         }

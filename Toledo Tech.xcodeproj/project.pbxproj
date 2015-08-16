@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2071932C4EB00870AC8 /* EventNavigationController.m */; };
+		9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */; };
+		9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2121938DC0600870AC8 /* VenuesNavigationController.m */; };
+		958F38A81B16721700E65621 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958F38A71B16721700E65621 /* Parse.framework */; };
+		959F43DF1939891F00F6FF8B /* VenuesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 959F43DE1939891F00F6FF8B /* VenuesDetailViewController.m */; };
+		959F43E1193A1F3200F6FF8B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 959F43E0193A1F3200F6FF8B /* MapKit.framework */; };
 		95BD0ACD1925C27A007C91A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACC1925C27A007C91A1 /* Foundation.framework */; };
 		95BD0ACF1925C27A007C91A1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */; };
 		95BD0AD11925C27A007C91A1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD0AD01925C27A007C91A1 /* UIKit.framework */; };
@@ -26,6 +32,16 @@
 		95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0A1926E1B1007C91A1 /* AboutViewController.m */; };
 		95BD0B0E192708DC007C91A1 /* GlobalFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */; };
 		95BD0B1119270E30007C91A1 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 95BD0B1019270E30007C91A1 /* Event.m */; };
+		95BD8EA11943CCBE00814352 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA01943CCBE00814352 /* CFNetwork.framework */; };
+		95BD8EA31943CCE000814352 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA21943CCE000814352 /* CoreLocation.framework */; };
+		95BD8EA51943CD0D00814352 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA41943CD0D00814352 /* QuartzCore.framework */; };
+		95BD8EA71943CD1900814352 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA61943CD1900814352 /* Security.framework */; };
+		95BD8EA91943CD2700814352 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EA81943CD2700814352 /* SystemConfiguration.framework */; };
+		95BD8EAB1943CD3B00814352 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EAA1943CD3B00814352 /* AudioToolbox.framework */; };
+		95BD8EAD1943CD6500814352 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EAC1943CD6500814352 /* libz.dylib */; };
+		95BD8EAF1943CE1900814352 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95BD8EAE1943CE1900814352 /* MobileCoreServices.framework */; };
+		95DA615A192AEE3700EF7D6F /* Venues.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DA6159192AEE3700EF7D6F /* Venues.m */; };
+		95E11EFA193A2E4E00D233C7 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 95E11EF9193A2E4E00D233C7 /* Annotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +55,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9579F2061932C4EB00870AC8 /* EventNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNavigationController.h; sourceTree = "<group>"; };
+		9579F2071932C4EB00870AC8 /* EventNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNavigationController.m; sourceTree = "<group>"; };
+		9579F20E1938D7F200870AC8 /* VenuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesTableViewController.h; sourceTree = "<group>"; };
+		9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesTableViewController.m; sourceTree = "<group>"; };
+		9579F2111938DC0600870AC8 /* VenuesNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesNavigationController.h; sourceTree = "<group>"; };
+		9579F2121938DC0600870AC8 /* VenuesNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesNavigationController.m; sourceTree = "<group>"; };
+		958F38A71B16721700E65621 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		959F43DD1939891F00F6FF8B /* VenuesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesDetailViewController.h; sourceTree = "<group>"; };
+		959F43DE1939891F00F6FF8B /* VenuesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenuesDetailViewController.m; sourceTree = "<group>"; };
+		959F43E0193A1F3200F6FF8B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		95BD0AC91925C27A007C91A1 /* Toledo Tech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Toledo Tech.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95BD0ACC1925C27A007C91A1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -68,6 +94,18 @@
 		95BD0B0D192708DC007C91A1 /* GlobalFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunctions.m; sourceTree = "<group>"; };
 		95BD0B0F19270E30007C91A1 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		95BD0B1019270E30007C91A1 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		95BD8EA01943CCBE00814352 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		95BD8EA21943CCE000814352 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		95BD8EA41943CD0D00814352 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		95BD8EA61943CD1900814352 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		95BD8EA81943CD2700814352 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		95BD8EAA1943CD3B00814352 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		95BD8EAC1943CD6500814352 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		95BD8EAE1943CE1900814352 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		95DA6158192AEE3700EF7D6F /* Venues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venues.h; sourceTree = "<group>"; };
+		95DA6159192AEE3700EF7D6F /* Venues.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venues.m; sourceTree = "<group>"; };
+		95E11EF8193A2E4E00D233C7 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		95E11EF9193A2E4E00D233C7 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +113,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BD8EAF1943CE1900814352 /* MobileCoreServices.framework in Frameworks */,
+				95BD8EAD1943CD6500814352 /* libz.dylib in Frameworks */,
+				95BD8EAB1943CD3B00814352 /* AudioToolbox.framework in Frameworks */,
+				95BD8EA91943CD2700814352 /* SystemConfiguration.framework in Frameworks */,
+				95BD8EA71943CD1900814352 /* Security.framework in Frameworks */,
+				95BD8EA51943CD0D00814352 /* QuartzCore.framework in Frameworks */,
+				958F38A81B16721700E65621 /* Parse.framework in Frameworks */,
+				95BD8EA31943CCE000814352 /* CoreLocation.framework in Frameworks */,
+				95BD8EA11943CCBE00814352 /* CFNetwork.framework in Frameworks */,
+				959F43E1193A1F3200F6FF8B /* MapKit.framework in Frameworks */,
 				95BD0ACF1925C27A007C91A1 /* CoreGraphics.framework in Frameworks */,
 				95BD0AD11925C27A007C91A1 /* UIKit.framework in Frameworks */,
 				95BD0ACD1925C27A007C91A1 /* Foundation.framework in Frameworks */,
@@ -94,6 +142,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9579F20C1938D7C400870AC8 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				9579F2061932C4EB00870AC8 /* EventNavigationController.h */,
+				9579F2071932C4EB00870AC8 /* EventNavigationController.m */,
+				95BD0B001926B24D007C91A1 /* EventsTableViewController.h */,
+				95BD0B011926B24E007C91A1 /* EventsTableViewController.m */,
+				95BD0B061926D417007C91A1 /* EventsDetailViewController.h */,
+				95BD0B071926D417007C91A1 /* EventsDetailViewController.m */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		9579F20D1938D7D300870AC8 /* Venues */ = {
+			isa = PBXGroup;
+			children = (
+				9579F2111938DC0600870AC8 /* VenuesNavigationController.h */,
+				9579F2121938DC0600870AC8 /* VenuesNavigationController.m */,
+				9579F20E1938D7F200870AC8 /* VenuesTableViewController.h */,
+				9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */,
+				959F43DD1939891F00F6FF8B /* VenuesDetailViewController.h */,
+				959F43DE1939891F00F6FF8B /* VenuesDetailViewController.m */,
+			);
+			name = Venues;
+			sourceTree = "<group>";
+		};
 		95BD0AC01925C27A007C91A1 = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +190,16 @@
 		95BD0ACB1925C27A007C91A1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				958F38A71B16721700E65621 /* Parse.framework */,
+				95BD8EAE1943CE1900814352 /* MobileCoreServices.framework */,
+				95BD8EAC1943CD6500814352 /* libz.dylib */,
+				95BD8EAA1943CD3B00814352 /* AudioToolbox.framework */,
+				95BD8EA81943CD2700814352 /* SystemConfiguration.framework */,
+				95BD8EA61943CD1900814352 /* Security.framework */,
+				95BD8EA41943CD0D00814352 /* QuartzCore.framework */,
+				95BD8EA21943CCE000814352 /* CoreLocation.framework */,
+				95BD8EA01943CCBE00814352 /* CFNetwork.framework */,
+				959F43E0193A1F3200F6FF8B /* MapKit.framework */,
 				95BD0ACC1925C27A007C91A1 /* Foundation.framework */,
 				95BD0ACE1925C27A007C91A1 /* CoreGraphics.framework */,
 				95BD0AD01925C27A007C91A1 /* UIKit.framework */,
@@ -176,6 +260,10 @@
 			children = (
 				95BD0B0F19270E30007C91A1 /* Event.h */,
 				95BD0B1019270E30007C91A1 /* Event.m */,
+				95DA6158192AEE3700EF7D6F /* Venues.h */,
+				95DA6159192AEE3700EF7D6F /* Venues.m */,
+				95E11EF8193A2E4E00D233C7 /* Annotation.h */,
+				95E11EF9193A2E4E00D233C7 /* Annotation.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -191,10 +279,8 @@
 		95BD0AFF1925C70A007C91A1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				95BD0B001926B24D007C91A1 /* EventsTableViewController.h */,
-				95BD0B011926B24E007C91A1 /* EventsTableViewController.m */,
-				95BD0B061926D417007C91A1 /* EventsDetailViewController.h */,
-				95BD0B071926D417007C91A1 /* EventsDetailViewController.m */,
+				9579F20D1938D7D300870AC8 /* Venues */,
+				9579F20C1938D7C400870AC8 /* Events */,
 				95BD0B091926E1B1007C91A1 /* AboutViewController.h */,
 				95BD0B0A1926E1B1007C91A1 /* AboutViewController.m */,
 			);
@@ -248,6 +334,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = GroundSpeed;
 				TargetAttributes = {
+					95BD0AC81925C27A007C91A1 = {
+						DevelopmentTeam = 2NDR5C7SVU;
+					};
 					95BD0AE31925C27A007C91A1 = {
 						TestTargetID = 95BD0AC81925C27A007C91A1;
 					};
@@ -298,13 +387,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				95BD0B0B1926E1B1007C91A1 /* AboutViewController.m in Sources */,
+				9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */,
 				95BD0ADD1925C27A007C91A1 /* AppDelegate.m in Sources */,
+				9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */,
 				95BD0B021926B24E007C91A1 /* EventsTableViewController.m in Sources */,
+				9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */,
 				95BD0B081926D417007C91A1 /* EventsDetailViewController.m in Sources */,
 				95BD0B1119270E30007C91A1 /* Event.m in Sources */,
 				95BD0AD91925C27A007C91A1 /* main.m in Sources */,
+				95DA615A192AEE3700EF7D6F /* Venues.m in Sources */,
+				95E11EFA193A2E4E00D233C7 /* Annotation.m in Sources */,
 				95BD0B051926C4E2007C91A1 /* Constants.m in Sources */,
 				95BD0B0E192708DC007C91A1 /* GlobalFunctions.m in Sources */,
+				959F43DF1939891F00F6FF8B /* VenuesDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +516,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/donmiller/Downloads,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Toledo Tech/Toledo Tech-Prefix.pch";
 				INFOPLIST_FILE = "Toledo Tech/Toledo Tech-Info.plist";
@@ -434,6 +535,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/donmiller/Downloads,
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Toledo Tech/Toledo Tech-Prefix.pch";
 				INFOPLIST_FILE = "Toledo Tech/Toledo Tech-Info.plist";

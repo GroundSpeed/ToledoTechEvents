@@ -11,17 +11,17 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</key>
-		<string>github.com:GroundSpeed/ToledoTechEvents.git</string>
+		<string>ssh://github.com/GroundSpeed/ToledoTechEvents.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Toledo Tech.xcodeproj</string>
+	<string>Toledo Tech.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:GroundSpeed/ToledoTechEvents.git</string>
+	<string>ssh://github.com/GroundSpeed/ToledoTechEvents.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>

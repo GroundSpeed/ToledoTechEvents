@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Venues.h"
 
 @interface Event : NSObject
 
-@property (nonatomic,retain) NSString *description;
+@property (nonatomic,retain) NSString *eventDescription;
 @property (nonatomic,retain) NSString *endTime;
 @property (nonatomic,retain) NSNumber *eventId;
 @property (nonatomic,retain) NSString *rsvpUrl;
@@ -18,5 +19,6 @@
 @property (nonatomic,retain) NSString *title;
 @property (nonatomic,retain) NSString *url;
 @property (nonatomic,retain) NSString *venueDetails;
+@property (nonatomic, strong) Venues *venue;
 
 @end

@@ -21,6 +21,9 @@
 @property (strong, nonatomic) IBOutlet UIButton *btnClose;
 @property (strong, nonatomic) IBOutlet UILabel *lblHdrStartDate;
 @property (strong, nonatomic) IBOutlet UILabel *lblHdrEndDate;
+@property (strong, nonatomic) IBOutlet UILabel *lblHdrVenue;
+@property (strong, nonatomic) IBOutlet UILabel *lblVenue;
+@property (strong, nonatomic) IBOutlet UILabel *lblRsvpPlaceHolder;
 
 @property (nonatomic, strong) Event *event;
 
