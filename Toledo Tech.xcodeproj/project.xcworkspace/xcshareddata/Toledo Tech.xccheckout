@@ -10,29 +10,29 @@
 	<string>Toledo Tech</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CB34F733-0619-4DFC-B9A8-7CB0AC2C6672</key>
-		<string>ssh://github.com/GroundSpeed/ToledoTechEvents.git</string>
+		<key>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</key>
+		<string>github.com:GroundSpeed/ToledoTechEvents.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Toledo Tech.xcodeproj/project.xcworkspace</string>
+	<string>Toledo Tech.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CB34F733-0619-4DFC-B9A8-7CB0AC2C6672</key>
+		<key>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/GroundSpeed/ToledoTechEvents.git</string>
+	<string>github.com:GroundSpeed/ToledoTechEvents.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CB34F733-0619-4DFC-B9A8-7CB0AC2C6672</string>
+	<string>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CB34F733-0619-4DFC-B9A8-7CB0AC2C6672</string>
+			<string>75D8E5D6D5BF96CDA2561DEC2977B4C0AA2D297E</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ToledoTechEvents</string>
 		</dict>
