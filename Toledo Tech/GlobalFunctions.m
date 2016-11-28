@@ -13,7 +13,7 @@
 + (NSString *)formatDateString:(NSString *)dateWithInitialFormat
 {
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ssZZZZZ"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
     NSDate *date = [dateFormatter dateFromString:dateWithInitialFormat];
     
     [dateFormatter setDateFormat:@"MM/dd/yyyy  EEEE  hh:mm a"];
