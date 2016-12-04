@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830773D51DF0ED3E00D06EAC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830773D41DF0ED3E00D06EAC /* Launch Screen.storyboard */; };
 		9579F2081932C4EB00870AC8 /* EventNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2071932C4EB00870AC8 /* EventNavigationController.m */; };
 		9579F2101938D7F200870AC8 /* VenuesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F20F1938D7F200870AC8 /* VenuesTableViewController.m */; };
 		9579F2131938DC0600870AC8 /* VenuesNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9579F2121938DC0600870AC8 /* VenuesNavigationController.m */; };
@@ -55,6 +56,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		830773D41DF0ED3E00D06EAC /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		9579F2061932C4EB00870AC8 /* EventNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventNavigationController.h; sourceTree = "<group>"; };
 		9579F2071932C4EB00870AC8 /* EventNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventNavigationController.m; sourceTree = "<group>"; };
 		9579F20E1938D7F200870AC8 /* VenuesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenuesTableViewController.h; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				95BD0AFB1925C640007C91A1 /* Main.storyboard */,
+				830773D41DF0ED3E00D06EAC /* Launch Screen.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			files = (
 				95BD0AFC1925C640007C91A1 /* Main.storyboard in Resources */,
 				95BD0AD71925C27A007C91A1 /* InfoPlist.strings in Resources */,
+				830773D51DF0ED3E00D06EAC /* Launch Screen.storyboard in Resources */,
 				95BD0ADF1925C27A007C91A1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -515,7 +519,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -534,7 +537,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
