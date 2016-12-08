@@ -35,7 +35,7 @@
     [super viewDidLoad];
     [PFAnalytics trackEvent:@"Read" dimensions:@{@"Category": @"Events"}];
     [self setNeedsStatusBarAppearanceUpdate];
-    arrayEventModel = [[NSMutableArray alloc] initWithObjects:nil];
+    arrayEventModel = [[NSMutableArray alloc] init];
     [self parseJSON];
 }
 
